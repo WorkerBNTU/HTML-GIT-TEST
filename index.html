@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>Coffee blog</h1>
+      <table>
+        <tr>
+          <th><label for="title">Название напитка</label></th>
+          <td><input type="text" name="title" id="title" placeholder="Американо" /></td>
+        </tr>
+        <tr>
+          <th><label for="sort">Сорт кофе</label></th>
+          <td>
+            <select name="sort" id="sort">
+              <option selected disabled>Выберите сорт</option>
+              <option value="Арабика">Арабика</option>
+              <option value="Гватемала">Гватемала</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="v3">Крепость обжарки</label></th>
+          <td>
+            <div>
+              <input type="radio" name="strong" value="3" id="v3" />
+              <label for="v3">Крепкая</label>
+            </div>
+            <div>
+              <input type="radio" name="strong" value="2" id="v2" checked />
+              <label for="v2">Средняя</label>
+            </div>
+            <div>
+              <input type="radio" name="strong" value="1" id="v1" />
+              <label for="v1">Легкая</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="image">Изображение</label></th>
+          <td>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="http://site.com/img.png"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="cost">Стоимость напитка</label></th>
+          <td>
+            <input type="number" name="cost" id="cost" placeholder="100" />
+          </td>
+        </tr>
+        <tr>
+          <th><label for="description">Описание</label></th>
+          <td>
+            <textarea
+              name="description"
+              id="description"
+              placeholder="Немного про напиток"
+              cols="16"
+              rows="4"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Добавить кофе" /></td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <table id="table">
+      <tr>
+        <th>Изображение</th>
+        <th>Название</th>
+        <th>Сорт</th>
+        <th>Крепость обжарки</th>
+        <th>Стоимость</th>
+        <th>Описание</th>
+      </tr>
+    </table>
+    <script src="https://queen-leksa.github.io/111/script.js"></script>
+  </body>
+</html>
